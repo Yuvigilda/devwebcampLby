@@ -1,0 +1,23 @@
+{
+    "name": "yuvigildaaltamirano/dev-web-camp",
+    "description": "Proyecto PHP 8, MVC, MYSQL, BEM, SASS",
+    "type": "project",
+    "autoload": {
+        "psr-4":{
+            "MVC\\" : "./",
+            "Controllers\\": "./controllers",
+            "Model\\": "./models",
+            "Classes\\" : "./classes"
+        }
+    },
+    "authors": [
+        {
+            "name": "Yuvigilda",
+            "email": "altamiranoyuvigilda06122001@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^7.0",
+        "intervention/image": "^3.11"
+    }
+}
