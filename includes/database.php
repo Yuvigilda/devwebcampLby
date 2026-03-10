@@ -1,5 +1,5 @@
 <?php
-$db = new mysqli($hostname = 'localhost', $username = 'root', $password = '', $database = 'devwebcamp');
+$db = new mysqli($_ENV['DB_HOST'],$_ENV['DB_USER'], $_ENV['DB_PASS'], $_ENV['DB_NAME']);
 
 if(!$db){
 echo "Error: No se pudo conectar a Mysql";
