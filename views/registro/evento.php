@@ -8,10 +8,10 @@
 
         <div class="evento__auto-info">
             <picture>
-                <source srcset="http://localhost:3000/img/speakers/<?php echo $evento->ponente->imagen; ?>.webp" type="image/webp">
-                <source srcset="http://localhost:3000/img/speakers/<?php echo $evento->ponente->imagen; ?>.png" type="image/png">
+                <source srcset="<?php echo $_ENV['HOST']; ?>/img/speakers/<?php echo $evento->ponente->imagen; ?>.webp" type="image/webp">
+                <source srcset="<?php echo $_ENV['HOST']; ?>//img/speakers/<?php echo $evento->ponente->imagen; ?>.png" type="image/png">
             
-                <img class="evento__imagen-autor" loading="lazy" src="http://localhost:3000/img/speakers/<?php echo $evento->ponente->imagen; ?>.png" width="500" height="300" alt="Imagen ponente">
+                <img class="evento__imagen-autor" loading="lazy" src="<?php echo $_ENV['HOST']; ?>//img/speakers/<?php echo $evento->ponente->imagen; ?>.png" width="500" height="300" alt="Imagen ponente">
             </picture>
            
             <p class="evento__autor-nomre">
